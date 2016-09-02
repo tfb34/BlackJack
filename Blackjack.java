@@ -1,6 +1,5 @@
-package blackJack;
+//package blackJack;
 
-import assign1.IO;
 
 //This is the main program for the blackjack game.
 public class Blackjack

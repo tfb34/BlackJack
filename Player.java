@@ -1,6 +1,5 @@
-package blackJack;
+//package blackJack;
 
-import assign1.IO;
 
 // This class represents one blackjack player (or the dealer)
 public class Player

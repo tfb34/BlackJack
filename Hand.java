@@ -1,4 +1,4 @@
-package blackJack;
+//package blackJack;
 
 //This class represents the set of cards held by one player (or the dealer).
 public class Hand
