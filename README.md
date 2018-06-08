@@ -1,2 +1,81 @@
 # BlackJack
-A simplified version of blackjack, where some of the more complex rules have been eliminated.
+
+Blackjack(aka 21) is a comparing card game between several players and a dealer, but in this version we'll stick to three players or fewer. Players compete against the dealer, not against each other. A player's goal in a round of blackjack is to have a higher score than the dealer, without going over 21 ("busting"). This is a command line Java program. 
+
+## Getting Started
+
+In order to play the game, you must download the project on your computer. These instructions will guide you on how to do that.
+
+### Prerequisites
+
+Since this is a Java program you must have the development tools to compile and run Java programs. You must download <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK(Java Development Kit)</a> if you haven't already.
+
+### Installing
+
+1. On Github, click on 'Clone or download' button, and copy the URL.
+
+2. Open your command prompt, and change the current working directory to a location where you want to store the project in. 
+
+3. Type 'git clone', paste the URL you copied earlier, and hit enter :
+
+```
+$ git clone https://github.com/tfb34/BlackJack.git
+```
+
+4. Compile the Java program by typing 'javac *.java' :
+
+```
+$ javac *.java
+```
+
+5. Run the program to play BlackJack :
+
+```
+$ java Blackjack
+```
+## Gameplay
+
+Blackjack is played with a "deck" (pile) of 52 cards. The front of each card shows symbols 
+and numbers that identify the card. The back of each card is identical, so that you cannot
+tell which card it is by looking at the back. Each card has one of 4 possible "suits": spades,
+hearts, clubs, or diamonds. Each suit has its own special symbol. Spade and club cards have black 
+symbols and numbers on the front, while heart and diamond cards have red symbols. Each card also
+has one of 13 possible "faces": ace (A), 2, 3, 4, 5, 6, 7, 8, 9, 10, jack (J), queen (Q), or
+king (K). The face of a card determines its numerical scoring value. Numbered cards are worth their
+number of points. Jacks, queens, and kings are all worth 10 points each. Aces can be worth 1 point
+or 11 points, depending on the circumstances.
+
+A player's "hand" is the set of cards the player currently holds. The score of the hand is the sum of 
+the point values of its cards. The goal in blackjack is to acquire a hand whose score is as high as possible 
+without going over 21. The point value of an ace card is whatever is most advantageous to the player: 1 or 11, 
+whichever would bring the score of the player's hand closer to 21 without exceeding it.
+
+A game of blackjack may involve any number of players (but for our purposes, three or fewer), and always exactly 
+one "dealer": the person who "deals" (hands out) the cards. Players compete against the dealer, not against each 
+other. A player's goal in a round of blackjack is to have a higher score than the dealer, without going over 
+21 ("busting").
+
+Each round of simplified blackjack proceeds as follows:
+
+The dealer shuffles the deck and deals two cards "face up" (with the front of the card showing) to each player.
+The dealer deals one card "face down" (with only the back showing) and one card "face up" to himself.
+The dealer asks the first player whether she wishes to "hit" (receive another card) or "stand" 
+(not receive any more cards).
+If she chooses to stand, she will not receive any more cards this round, so her score is fixed. 
+The game moves on to the next player.
+If she chooses to hit, the dealer will deal her another card, face up, and her score increases. 
+She will then be given the option to hit or stand again.
+If her score exceeds 21, she has "busted" and immediately loses this round - play will continue with the next player.
+Essentially, the player can continue to hit until she either decides to stand, or busts.
+The hit-or-stand process is then repeated for each other player.
+Once all players are done, it is the dealer's turn to play. First, he turns his face-down card over. 
+Then he hits until his score is 17 or higher. The dealer cannot decide to hit or stand arbitrarily. 
+If his score is less than 17, he must hit. If it is 17 or higher, he must stand.
+If the dealer busts, any players who did not bust earlier win this round. Otherwise, each player's score 
+is compared to that of the dealer. A player wins if he has a higher score than the dealer, loses if he has 
+a lower score, and "pushes" (ties) if he has the same score.
+At the end of each round, the group of players can decide whether they would like to play again.
+
+## Built With
+
+* [Java](https://java.com/en/download/) - The programming language used
